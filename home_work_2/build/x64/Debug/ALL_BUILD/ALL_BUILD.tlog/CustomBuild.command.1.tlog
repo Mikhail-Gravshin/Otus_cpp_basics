@@ -1,0 +1,10 @@
+^C:\OTUS\OTUS_CPP_BASICS\HOME_WORK_2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Otus/Otus_cpp_basics/home_work_2 -BC:/Otus/Otus_cpp_basics/home_work_2/build --check-stamp-file C:/Otus/Otus_cpp_basics/home_work_2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
